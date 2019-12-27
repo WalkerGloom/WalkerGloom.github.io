@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/Common.css"/>
+		<style type="text/css">
+			#fontCen{text-align: center;}
+			.col_right iframe{min-height: 1100px;}
+			.bottomPager{height: 50px;}
+		</style>
+	</head>
+	<body>
+		<div class="mainBox_1">
+			<div class="col_left">
+				<div class="leftSideNav">
+					<img src="img/新建-设计-画布%20(3).png" >
+					
+					<ul>
+						<a href="iframePage/LatestPage1.html" target="Latest">
+							<li id="fontCen">快讯</li>
+						</a>
+						<a href="iframePage/LatestPage2.html" target="Latest">
+							<li>本站公告</li>
+						</a>
+						<a href="iframePage/LatestPage3.html" target="Latest">
+							<li>动物救护</li>
+						</a>
+					</ul>
+				</div>
+				
+				<div class="fastBox">
+					<input type="image" src="img/jiaotong.png" />
+					<input type="image" src="img/lianxi.png" />
+					<input type="image" src="img/youyuan.png" />
+					<input type="image" src="img/zhineng.png" />
+				</div>
+			</div>
+			
+			<div class="col_right">
+				<iframe id="Lframe" src="iframePage/LatestPage1.html" name="Latest" scrolling="no"></iframe>
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div class="bottomPager">
+				
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			function iFH(){
+				var ifm=document.getElementById("Lframe");
+				var subWeb=document.frames?document.frames["Lframe"].document:ifm.contentDocument;
+				if(ifm!=null&&subWeb!=null){
+					ifm.style.height='500px';
+					ifm.style.height=subWeb.body.scrollHeight+'px';
+				}
+			};
+		</script>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.mainBody1 {
+				width: 800px;
+				height: 900px;
+				padding: 1px;
+				margin: 0 auto;
+				background: url(img/3c8bf73c0518fa747e6747a90140f2b6.png) no-repeat;
+				background-color: #C7E0AF;
+				background-size: 100% 100%;
+			}
+
+			.iframestyle{}
+			
+			.sideSelect1 {
+				width: 140px;
+				height: 150px;
+				display: inline-block;
+				margin: 20px 0 0 40px;
+				position: relative;
+			}
+			
+			/* .col-left{width: 146px;height: 500px;display: inline-block;margin-left: 60px;} */
+
+			.sideSelect1 a {
+				text-decoration: none;
+				color: black;
+			}
+			
+			.sideSelect1 img{z-index: 0;position: absolute;margin: 70px 0 20px 15px;}
+			
+			.sideSelect1 ul {
+				position: absolute;
+				z-index: 1;
+				list-style: none;
+				margin: 108px 0 0 17px;
+			}
+
+			.sideSelect1 ul li {
+				height: 30px;
+				margin: 0 0 37px 0;
+				font-weight: bold;
+				font-size: 90%;
+			}
+			
+			
+
+			.content1 {
+				width: 530px;
+				height: 600px;
+				margin: 40px 80px 0 0;
+			}
+
+			.content1 {
+				float: right;
+			}
+			
+			.buttonBox{width: 160px;height: 160px;position: absolute;top: 63%;left: 27%;}
+			.buttonBox input{height: 40%;width: 40%;float: left;margin: 5px;}
+			
+			.btn{
+			    /* margin: 20px 120px; */
+			    /* width: 80px;        */
+				background-color: #C7E0AF;
+			}
+			.btn.active{
+			    background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<div class="mainBody1">
+	
+			
+					<div class="sideSelect1">
+						<img src="img/新建-设计-画布.png" >
+						
+						<ul>
+							<a href="iframePage/ipage1.html" target="mainBody">
+								<li>动物园1</li>
+							</a>
+							<a href="iframePage/ipage2.html" target="mainBody">
+								<li>动物园2</li>
+							</a>
+							<a href="iframePage/ipage3.html" target="mainBody">
+								<li>动物园3</li>
+							</a>
+						</ul>
+					</div>
+				
+					<div class="buttonBox">
+						<input type="image" src="img/jiaotong.png" />
+						<input type="image" src="img/lianxi.png" />
+						<input type="image" src="img/youyuan.png" />
+						<input type="image" src="img/zhineng.png" />
+						
+					</div>
+				
+				<div class="content1">
+					<iframe class="iframestyle" src="iframePage/ipage1.html" name="mainBody" width="530" height="600"></iframe>
+				</div>
+				
+			</div>
+		
+	</body>
+</html>
